@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>508</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ПДУиТР - мод С</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1050</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCOM">
+    <property name="title">
+     <string>COM-порт</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuBaseStation">
+    <property name="title">
+     <string>Базовая станция</string>
+    </property>
+    <widget class="QMenu" name="menuRetranslate">
+     <property name="title">
+      <string>Режим ретранслятора</string>
+     </property>
+     <addaction name="action_retransEnable"/>
+     <addaction name="action_retransDisable"/>
+    </widget>
+    <addaction name="menuRetranslate"/>
+    <addaction name="action_currentTime"/>
+    <addaction name="action_periodTx"/>
+    <addaction name="action_numChannel"/>
+    <addaction name="action_powerTrans"/>
+    <addaction name="action_addrMod"/>
+    <addaction name="action_freqOffset"/>
+    <addaction name="action_validTable"/>
+   </widget>
+   <addaction name="menuCOM"/>
+   <addaction name="menuBaseStation"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Активировать</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Деактивировать</string>
+   </property>
+  </action>
+  <action name="action_retransEnable">
+   <property name="text">
+    <string>Активировать</string>
+   </property>
+  </action>
+  <action name="action_retransDisable">
+   <property name="text">
+    <string>Деактивировать</string>
+   </property>
+  </action>
+  <action name="action_currentTime">
+   <property name="text">
+    <string>Корректировка времени</string>
+   </property>
+  </action>
+  <action name="action_periodTx">
+   <property name="text">
+    <string>Время между передачей</string>
+   </property>
+  </action>
+  <action name="action_numChannel">
+   <property name="text">
+    <string>Номер канала</string>
+   </property>
+  </action>
+  <action name="action_powerTrans">
+   <property name="text">
+    <string>Мощность передатчика</string>
+   </property>
+  </action>
+  <action name="action_addrMod">
+   <property name="text">
+    <string>Адрес модуляции</string>
+   </property>
+  </action>
+  <action name="action_freqOffset">
+   <property name="text">
+    <string>Корректировка по частоте</string>
+   </property>
+  </action>
+  <action name="action_validTable">
+   <property name="text">
+    <string>Таблица валидных номеров</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

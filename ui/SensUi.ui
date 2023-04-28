@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>486</width>
+    <height>529</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_now">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 127)</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Текущие данные&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="table_now"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_koef">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>14</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:rgb(0, 0, 127)</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Значения коэффициентов&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="table_koef"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>486</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="action_numID"/>
+    <addaction name="action_sernum"/>
+    <addaction name="action_time"/>
+    <addaction name="action_numchannel"/>
+    <addaction name="action_powertrans"/>
+    <addaction name="action_addrmod"/>
+    <addaction name="action_freqoffset"/>
+    <addaction name="action_filecalib"/>
+    <addaction name="action_dellistmemory"/>
+    <addaction name="action_resetsens"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_numID">
+   <property name="text">
+    <string>Номер в подсети</string>
+   </property>
+  </action>
+  <action name="action_sernum">
+   <property name="text">
+    <string>Серийный номер</string>
+   </property>
+  </action>
+  <action name="action_time">
+   <property name="text">
+    <string>Время между передачей</string>
+   </property>
+  </action>
+  <action name="action_numchannel">
+   <property name="text">
+    <string>Номер канала</string>
+   </property>
+  </action>
+  <action name="action_powertrans">
+   <property name="text">
+    <string>Мощность передатчика</string>
+   </property>
+  </action>
+  <action name="action_addrmod">
+   <property name="text">
+    <string>Адрес модуляции</string>
+   </property>
+  </action>
+  <action name="action_freqoffset">
+   <property name="text">
+    <string>Корректировка по частоте</string>
+   </property>
+  </action>
+  <action name="action_filecalib">
+   <property name="text">
+    <string>Записать файл калибровок</string>
+   </property>
+  </action>
+  <action name="action_dellistmemory">
+   <property name="text">
+    <string>Стереть страницу памяти</string>
+   </property>
+  </action>
+  <action name="action_resetsens">
+   <property name="text">
+    <string>Обнулить датчик</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
